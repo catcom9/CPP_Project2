@@ -1,14 +1,12 @@
 class HRSR04 {
 private:
     float distance;
-    int duration;
-    int zone;
+    float duration;
 
 
 public:
     HRSR04();
-    HRSR04(int);
-    HRSR04(int, float, int);
+    HRSR04(float, float);
 
     int getDistance();
     int analogRead();

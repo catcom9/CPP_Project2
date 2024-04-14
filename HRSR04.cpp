@@ -1,27 +1,16 @@
 #include "HRSR04.h"
 #include <stdlib.h>
-#include <time.h>
 
 using namespace std;
 
 //Default Constructor
 HRSR04::HRSR04(){
-    srand(time(NULL));
     distance = 0;
     duration = 0;
-    zone = 0;
-}
-
-//Tell the sensor what zone its in.
-HRSR04::HRSR04(int initial_zone){
-    srand(time(NULL));
-    zone = initial_zone;
 }
 
 //Test Constructor
-HRSR04::HRSR04(int initial_zone, float new_distance, int new_duration){
-    srand(time(NULL));
-    zone = initial_zone;
+HRSR04::HRSR04(float new_distance, float new_duration){
     distance = new_distance;
     duration = new_duration;
 }
